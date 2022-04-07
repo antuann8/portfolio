@@ -76,5 +76,15 @@
 				</ul>
 		</footer>
 	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+	<script>
+		const tl = gsap.timeline({defaults: {duration : 0.4}});
+		tl.from('.big-item', {x: -700, opacity: 0})
+			.from('.small-case', {x: 500, opacity: 0})
+			.from('.small-partner', {x:500, opacity: 0})
+			.from('.burger-header-arrow', {y:-500, opacity: 0})
+			.from('.footer-list', {y: 500, opacity: 0})
+
+	</script>
 </body>
 </html>

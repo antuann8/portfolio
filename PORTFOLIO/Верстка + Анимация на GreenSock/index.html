@@ -112,10 +112,13 @@
 		</main>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-	<script>	
-		const head = document.querySelector(".head");
-		let tl = gsap.timeLine();
-		tl.to(head, {scale: 2});
+	<script>
+		// const tl = gsap.timeline({defaults: {duration : 2}});
+		// tl.from('.brand-section', {x: -1000, opacity: 0})
+		// tl.from('.photo-section', {x: 1000, opacity: 0})
+		gsap.from('.brand-section', {x: -1000, opacity: 0, duration : 1.5});
+		gsap.from('.photo-section', {x: 1000, opacity: 0, duration : 1.5});
+		gsap.from('.header', {y: -1000, opacity: 0, duration: 1.5})
 	</script>
 </body>
 </html>
